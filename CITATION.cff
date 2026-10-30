@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use FDX Inspect in research or teaching, cite this software."
+title: FDX Inspect
+type: software
+version: 0.1.0
+authors:
+  - name: Inkwell
+repository-code: https://github.com/inkwell-app/fdx-inspect
+url: https://www.inkwell.software/tools/fdx-inspector
+license: MIT

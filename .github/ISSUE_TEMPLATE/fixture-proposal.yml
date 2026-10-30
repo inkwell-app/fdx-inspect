@@ -1,0 +1,26 @@
+name: Fixture proposal
+description: Contribute a small FDX edge case with clear reuse terms.
+title: "Fixture: "
+labels: [fixtures, needs-triage]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Structural feature and expected report
+      description: Describe the smallest file that would exercise this case.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Creator, source and license
+      description: Identify who made the sample and its reuse terms. Original synthetic examples are welcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Reuse
+      options:
+        - label: I created this sample or can provide a license allowing its inclusion.
+          required: true

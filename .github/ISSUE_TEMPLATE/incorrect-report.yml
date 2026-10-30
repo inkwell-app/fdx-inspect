@@ -1,0 +1,38 @@
+name: Incorrect report
+description: Report a wrong count, missed signal or CLI failure.
+title: "Report: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "Show the smallest example that demonstrates the problem. For vulnerabilities, email security@inkwell.software."
+  - type: input
+    id: version
+    attributes:
+      label: Versions
+      description: FDX Inspect version, Node version and operating system.
+      placeholder: "0.1.0, Node 22.18, macOS"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or library call
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+      description: Include the finding code or count and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Paste a short original XML example or link to a reusable public fixture.
+      render: xml
+    validations:
+      required: true

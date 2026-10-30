@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinalDraft DocumentType="Script">
+  <Content>
+    <Paragraph Type="Scene Heading"><Text>INT. SIGNAL ROOM - NIGHT</Text></Paragraph>
+    <Paragraph Type="Action" RevisionID="9"><Text>The lamp goes dark.</Text></Paragraph>
+  </Content>
+  <Revisions><Revision ID="1" Name="Blue"/></Revisions>
+</FinalDraft>

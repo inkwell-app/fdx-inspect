@@ -1,0 +1,23 @@
+name: Feature request
+description: Describe a workflow or inspection signal you need.
+title: "Feature: "
+labels: [enhancement, needs-triage]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you trying to do?
+      description: Describe the handoff, integration or analysis and where you get stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Useful result
+      description: What would the report or command show? Include an example if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround

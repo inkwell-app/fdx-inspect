@@ -1,0 +1,598 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/inkwell-app/fdx-inspect/blob/main/schemas/report.schema.json",
+  "title": "FDX inspection report v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "ok",
+    "health",
+    "counts",
+    "revisions",
+    "metadata",
+    "pages",
+    "scenes",
+    "sceneMapTruncated",
+    "findings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "health": {
+      "enum": ["readable", "readable_with_warnings", "unreadable"]
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "paragraphs",
+        "scenes",
+        "action",
+        "character",
+        "dialogue",
+        "parenthetical",
+        "transition",
+        "unknown",
+        "dualDialogue",
+        "notes",
+        "pageBreaks",
+        "revisedParagraphs",
+        "numberedScenes",
+        "lockedScenes",
+        "omittedScenes",
+        "textRuns"
+      ],
+      "properties": {
+        "paragraphs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "action": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "character": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dialogue": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parenthetical": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "transition": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dualDialogue": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "notes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pageBreaks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "revisedParagraphs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "numberedScenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "lockedScenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "omittedScenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "textRuns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "revisions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sets", "referencedIds", "undefinedIds", "duplicateIds", "missingIds"],
+      "properties": {
+        "sets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "referencedIds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "undefinedIds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicateIds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missingIds": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["titlePage", "pageLayout", "fontSpec", "moresAndContinueds"],
+      "properties": {
+        "titlePage": {
+          "type": "boolean"
+        },
+        "pageLayout": {
+          "type": "boolean"
+        },
+        "fontSpec": {
+          "type": "boolean"
+        },
+        "moresAndContinueds": {
+          "type": "boolean"
+        }
+      }
+    },
+    "pages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locked", "markers", "insertedMarkers"],
+      "properties": {
+        "locked": {
+          "type": "boolean"
+        },
+        "markers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "insertedMarkers": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "index",
+          "paragraph",
+          "paragraphs",
+          "dialogue",
+          "numbered",
+          "locked",
+          "omitted"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "paragraph": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "paragraphs": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "dialogue": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "numbered": {
+            "type": "boolean"
+          },
+          "locked": {
+            "type": "boolean"
+          },
+          "omitted": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "sceneMapTruncated": {
+      "type": "boolean"
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "input_too_large"
+              },
+              "severity": {
+                "const": "error"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "malformed_xml"
+              },
+              "severity": {
+                "const": "error"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "unsupported_xml"
+              },
+              "severity": {
+                "const": "error"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "unsupported_document"
+              },
+              "severity": {
+                "const": "error"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "empty_content"
+              },
+              "severity": {
+                "const": "warning"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "unknown_elements"
+              },
+              "severity": {
+                "const": "warning"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "unknown_paragraphs"
+              },
+              "severity": {
+                "const": "warning"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "revisions"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "missing_revision_sets"
+              },
+              "severity": {
+                "const": "warning"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "duplicate_revision_sets"
+              },
+              "severity": {
+                "const": "warning"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "invalid_revision_sets"
+              },
+              "severity": {
+                "const": "warning"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "locked_pages"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "scene_numbers"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "omitted_scenes"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "dual_dialogue"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "notes"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "severity", "count"],
+            "properties": {
+              "code": {
+                "const": "scene_map_truncated"
+              },
+              "severity": {
+                "const": "info"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "ok": {
+          "const": true
+        },
+        "health": {
+          "const": "readable"
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "severity": {
+                "enum": ["info"]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "ok": {
+          "const": true
+        },
+        "health": {
+          "const": "readable_with_warnings"
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "severity": {
+                "enum": ["info", "warning"]
+              }
+            }
+          },
+          "contains": {
+            "type": "object",
+            "properties": {
+              "severity": {
+                "enum": ["warning"]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "ok": {
+          "const": false
+        },
+        "health": {
+          "const": "unreadable"
+        },
+        "findings": {
+          "type": "array",
+          "contains": {
+            "type": "object",
+            "properties": {
+              "severity": {
+                "enum": ["error"]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@inkwell/fdx-inspect",
+  "version": "0.1.0",
+  "description": "Inspect Final Draft (FDX) screenplay structure, revisions and locked pages from your terminal or CI.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "fdx-inspect": "dist/cli.js" },
+  "exports": { ".": { "types": "./dist/inspect.d.ts", "import": "./dist/inspect.js" }, "./schema": "./schemas/report.schema.json", "./batch-schema": "./schemas/batch.schema.json" },
+  "files": ["dist/inspect.js", "dist/inspect.d.ts", "dist/cli.js", "dist/cli.d.ts", "dist/batch.js", "dist/batch.d.ts", "dist/example-policy.js", "schemas", "docs", "fixtures", "assets", "LICENSE", "README.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md", "CITATION.cff", "CHANGELOG.md", "llms.txt"],
+  "engines": { "node": ">=22.18.0" },
+  "packageManager": "pnpm@10.20.0",
+  "repository": { "type": "git", "url": "git+https://github.com/inkwell-app/fdx-inspect.git" },
+  "homepage": "https://www.inkwell.software/tools/fdx-inspector",
+  "bugs": "https://github.com/inkwell-app/fdx-inspect/issues",
+  "keywords": ["fdx", "final-draft", "screenplay", "screenwriting", "cli", "xml", "interoperability"],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "pnpm build",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm build && node --test dist/*.test.mjs",
+    "smoke:package": "node dist/package-smoke.mjs",
+    "check:links": "node dist/check-links.mjs",
+    "check:interop": "node dist/check-interop.mjs",
+    "generate": "pnpm build && node dist/generate-schema.mjs",
+    "check:generated": "node dist/generate-schema.mjs --check",
+    "inspect": "node dist/cli.js"
+  },
+  "dependencies": { "fast-xml-parser": "5.11.2" },
+  "devDependencies": { "@types/node": "22.10.2", "ajv": "8.20.0", "typescript": "5.9.3", "yaml": "2.8.2" }
+}

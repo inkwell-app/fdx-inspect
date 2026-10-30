@@ -1,0 +1,25 @@
+[
+  { "name": "bug", "color": "d73a4a", "description": "Incorrect report or CLI behavior" },
+  {
+    "name": "enhancement",
+    "color": "a2eeef",
+    "description": "A new inspection signal or workflow"
+  },
+  {
+    "name": "fixtures",
+    "color": "5319e7",
+    "description": "Original FDX examples and expected results"
+  },
+  {
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "Guides, examples and report explanations"
+  },
+  { "name": "needs-triage", "color": "fbca04", "description": "Awaiting maintainer review" },
+  { "name": "dependencies", "color": "0366d6", "description": "Dependency and action updates" },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "A well-scoped contribution with a clear starting point"
+  }
+]

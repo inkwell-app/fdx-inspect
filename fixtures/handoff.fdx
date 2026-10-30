@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinalDraft DocumentType="Script" Version="5">
+  <Content>
+    <Paragraph Type="Scene Heading"><SceneProperties Number="12" Locked="Yes"/><Text>INT. SIGNAL ROOM - NIGHT</Text></Paragraph>
+    <Paragraph Type="Action" RevisionID="1"><Text>A lamp pulses twice. Rowan answers with a third.</Text></Paragraph>
+    <Paragraph><DualDialogue>
+      <Paragraph Type="Character"><Text>ROWAN</Text></Paragraph>
+      <Paragraph Type="Dialogue"><Text>Hold the line.</Text></Paragraph>
+      <Paragraph Type="Character"><Text>JULES</Text></Paragraph>
+      <Paragraph Type="Dialogue"><Text>I've got it.</Text></Paragraph>
+    </DualDialogue></Paragraph>
+    <Paragraph Type="Scene Heading"><SceneProperties Number="13" Locked="Yes"/><Text>OMITTED</Text></Paragraph>
+    <Paragraph Type="Scene Heading" StartsNewPage="Yes"><SceneProperties Number="14"/><Text>EXT. RADIO TOWER - DAWN</Text></Paragraph>
+    <Paragraph Type="Action"><Text RevisionID="1">The city wakes beneath the antenna.</Text><ScriptNotes><ScriptNote><Paragraph Type="Action"><Text>Check the light change.</Text></Paragraph></ScriptNote></ScriptNotes></Paragraph>
+  </Content>
+  <Revisions ActiveSet="1" RevisionMode="Yes"><Revision ID="1" Name="Blue" Color="#00000000FFFF"/></Revisions>
+  <LockedPages><Page Number="3"/><Page Number="3A"/></LockedPages>
+  <TitlePage><Content><Paragraph Type="General"><Text>THE THIRD SIGNAL</Text></Paragraph></Content></TitlePage>
+  <PageLayout/><FontSpec/><MoresAndContinueds/>
+</FinalDraft>

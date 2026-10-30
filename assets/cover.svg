@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">FDX Inspect — Know what is in the handoff.</title>
+  <desc id="desc">An original Inkwell illustration of screenplay pages connected to a scene map, revision mark and locked-page marker.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#344147" stroke-width="0.5"/></pattern>
+    <linearGradient id="paper" x2="0.8" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#e0dccb"/></linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="#152229"/>
+  <rect x="680" width="600" height="640" fill="url(#grid)"/>
+  <path d="M64 80H118" stroke="#c8e99e" stroke-width="5"/>
+  <text x="136" y="88" fill="#e2e6df" font-family="Arial,sans-serif" font-size="24" letter-spacing="4">INKWELL / OPEN TOOLS</text>
+  <text x="60" y="228" fill="#faf8f0" font-family="Georgia,serif" font-size="92">FDX Inspect</text>
+  <text x="64" y="302" fill="#c8e99e" font-family="Arial,sans-serif" font-size="32">Know what is in the handoff.</text>
+  <text x="64" y="385" fill="#b7c3c4" font-family="Arial,sans-serif" font-size="23">Scenes. Revisions. Locked pages.</text>
+  <rect x="64" y="464" width="495" height="58" rx="6" fill="#0c171c" stroke="#405257"/>
+  <text x="86" y="501" fill="#e6ede4" font-family="monospace" font-size="22">$ fdx-inspect draft.fdx</text>
+  <text x="64" y="584" fill="#97aaa9" font-family="Arial,sans-serif" font-size="18">CLI + LIBRARY     /     JSON + MARKDOWN     /     MIT</text>
+  <g transform="translate(744 108) rotate(-7 120 180)">
+    <rect x="-12" y="16" width="258" height="346" rx="5" fill="#687674"/>
+    <rect width="258" height="346" rx="5" fill="url(#paper)"/>
+    <path d="M30 50H177M30 64H141M30 103H221M30 116H214M30 129H190M95 174H162M66 195H201M66 208H187M30 252H202M30 265H221M30 278H174" stroke="#7e8580" stroke-width="5"/>
+    <path d="M238 99V137" stroke="#7799bd" stroke-width="6"/>
+    <text x="194" y="321" fill="#3f514e" font-family="monospace" font-size="21">3A.</text>
+  </g>
+  <path d="M981 193H1044V227H1083M982 319H1083M962 429H1044V411H1083" stroke="#c8e99e" stroke-width="2" fill="none"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="1050" y="198" width="178" height="64" rx="6" fill="#24383d" stroke="#5d7777"/>
+    <text x="1066" y="225" fill="#c8e99e" font-size="13" letter-spacing="2">STRUCTURE</text><text x="1066" y="249" fill="#f4f4e9" font-size="20">Scene map</text>
+    <rect x="1050" y="291" width="178" height="64" rx="6" fill="#24383d" stroke="#5d7777"/>
+    <text x="1066" y="318" fill="#acc7e5" font-size="13" letter-spacing="2">REVISIONS</text><text x="1066" y="342" fill="#f4f4e9" font-size="20">Marks + sets</text>
+    <rect x="1050" y="384" width="178" height="64" rx="6" fill="#24383d" stroke="#5d7777"/>
+    <text x="1066" y="411" fill="#e3c99a" font-size="13" letter-spacing="2">PRODUCTION</text><text x="1066" y="435" fill="#f4f4e9" font-size="20">Page locks</text>
+  </g>
+  <circle cx="990" cy="535" r="5" fill="#c8e99e"/><text x="1008" y="542" fill="#b7c3c4" font-family="monospace" font-size="17">.fdx → report</text>
+</svg>

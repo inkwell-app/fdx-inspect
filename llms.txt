@@ -1,0 +1,12 @@
+# FDX Inspect
+
+> A CLI and library for inspecting Final Draft screenplay structure, revisions and locked pages.
+
+- [Start here](https://github.com/inkwell-app/fdx-inspect/blob/main/README.md)
+- [CLI guide](https://github.com/inkwell-app/fdx-inspect/blob/main/docs/cli.md)
+- [Report contract](https://github.com/inkwell-app/fdx-inspect/blob/main/docs/report.md)
+- [Example report](https://github.com/inkwell-app/fdx-inspect/blob/main/docs/example-report.md)
+- [Report schema](https://github.com/inkwell-app/fdx-inspect/blob/main/schemas/report.schema.json)
+- [Interop fixtures](https://github.com/inkwell-app/screenplay-interop)
+- [Browser inspector](https://www.inkwell.software/tools/fdx-inspector?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=llms_browser)
+- [Inkwell resources](https://www.inkwell.software/resources?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=llms_resources)

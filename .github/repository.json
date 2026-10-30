@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "description": "Inspect Final Draft (FDX) screenplay structure, revisions and locked pages. CLI, JSON reports, original examples and CI checks.",
+    "homepage": "https://www.inkwell.software/tools/fdx-inspector?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=repository_homepage",
+    "default_branch": "main",
+    "has_issues": true,
+    "has_wiki": false,
+    "has_projects": false,
+    "has_discussions": false,
+    "allow_squash_merge": true,
+    "allow_merge_commit": false,
+    "allow_rebase_merge": false,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": true,
+    "allow_update_branch": true,
+    "squash_merge_commit_title": "PR_TITLE",
+    "squash_merge_commit_message": "PR_BODY"
+  },
+  "topics": [
+    "fdx",
+    "final-draft",
+    "screenplay",
+    "screenwriting",
+    "cli",
+    "xml",
+    "interoperability",
+    "typescript",
+    "inkwell"
+  ]
+}
