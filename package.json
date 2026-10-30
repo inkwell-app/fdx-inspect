@@ -26,5 +26,5 @@
     "inspect": "node dist/cli.js"
   },
   "dependencies": { "fast-xml-parser": "5.11.2" },
-  "devDependencies": { "@types/node": "22.10.2", "ajv": "8.20.0", "typescript": "5.9.3", "yaml": "2.8.2" }
+  "devDependencies": { "@types/node": "22.10.2", "ajv": "8.20.0", "typescript": "5.9.3", "yaml": "2.9.1" }
 }
