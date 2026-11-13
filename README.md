@@ -92,6 +92,10 @@ See [coverage and limits](docs/report.md#coverage-and-limits) when building on i
 | --- | --- |
 | Draft and revise a screenplay | [Inkwell Plot](https://www.inkwell.software/plot?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_plot) |
 | Prepare an import | [FDX import guide](https://www.inkwell.software/resources/guides/import-fdx?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_import) |
+| View an FDX without Final Draft, export a PDF, or convert a PDF to Fountain | [Screenplay converter](https://www.inkwell.software/tools/screenplay-converter?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_converter) |
+| Move your scripts out of Final Draft | [Switch from Final Draft](https://www.inkwell.software/resources/migrate/from-final-draft?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_migrate) |
+| Deliver locked production pages | [FDX handoff guide](https://www.inkwell.software/learn/fdx-handoff?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_fdx_handoff) |
+| Test an importer against known edge cases | [Screenplay interoperability fixtures](https://github.com/inkwell-app/screenplay-interop) |
 | Plan a revision or handoff | [Writing Handbook](https://github.com/inkwell-app/writing-handbook) |
 | Find writing tools and references | [Inkwell resources](https://www.inkwell.software/resources?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_resources) |
 | Compare plans | [Inkwell pricing](https://www.inkwell.software/pricing?utm_source=github&utm_medium=referral&utm_campaign=fdx_inspect&utm_id=github_fdx_inspect&utm_source_platform=github&utm_content=readme_pricing) |
