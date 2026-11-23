@@ -1,4 +1,4 @@
-<img src="assets/cover.svg" alt="FDX Inspect — Know what is in the handoff. A screenplay becomes a map of scenes, revisions and locked pages." width="1280">
+<img src="assets/social-preview.png" alt="FDX Inspect: know what is in the handoff. The report for a sample FDX file shows 3 scenes, 9 paragraphs, 2 revised paragraphs and 2 locked-page markers, with a scene map." width="1280">
 
 # FDX Inspect
 
