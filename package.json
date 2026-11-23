@@ -25,6 +25,6 @@
     "check:generated": "node dist/generate-schema.mjs --check",
     "inspect": "node dist/cli.js"
   },
-  "dependencies": { "fast-xml-parser": "5.11.2" },
+  "dependencies": { "fast-xml-parser": "5.12.1" },
   "devDependencies": { "@types/node": "22.20.5", "ajv": "8.20.0", "typescript": "7.0.2", "yaml": "2.9.1" }
 }
